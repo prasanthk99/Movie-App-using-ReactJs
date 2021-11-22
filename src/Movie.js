@@ -34,7 +34,7 @@ function Movie() {
                         year = "";
                     }
                     let votecolor = "";
-                    if (vote_average < 5) {
+                    if (vote_average <= 5) {
                         votecolor = "red";
                     }
                     else if (vote_average > 5) {
