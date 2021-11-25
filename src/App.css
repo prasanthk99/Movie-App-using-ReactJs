@@ -4,6 +4,10 @@
   --movie-color:#3F3351;
 }
 
+.body{
+  font-family: "Gill Sans", sans-serif;
+}
+
 .App {
   min-height: 80vh;
   width: 100%;
