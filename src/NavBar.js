@@ -11,7 +11,7 @@ const Navbar = ({ setData }) => {
         e.preventDefault();
         if (searchterm) {
             const data = search + searchterm;
-            fetch(data).then((res) => res.json()).then((d) => setData(d.results));
+            fetch(data).then((res) => res.json()).then((d) => setData([d.results]));
         }
     }
 
@@ -19,7 +19,7 @@ const Navbar = ({ setData }) => {
         setsearchterm(e.target.value)
         if (searchterm) {
             const data = search + searchterm;
-            fetch(data).then((res) => res.json()).then((d) => setData(d.results));
+            fetch(data).then((res) => res.json()).then((d) => setData([d.results]));
 
         }
     }
