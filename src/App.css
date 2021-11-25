@@ -15,6 +15,7 @@
 .App {
   min-height: 80vh;
   width: 100%;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1{

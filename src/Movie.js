@@ -31,8 +31,6 @@ function Movie() {
         getfetch();
     }
 
-    console.log(datas);
-
     return (
         <>
             <Navbar setData={setDatas} Data={datas} />
