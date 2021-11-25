@@ -18,13 +18,19 @@ h1{
   line-height: 20px;
 }
 
+.content{
+  background-color: var(--body-color);
+  padding: 20px;
+  text-align: center;
+  min-height: 90vh;
+}
+
 .Movies {
   display: flex;
   flex-wrap: wrap;
   /* align-items: center; */
   justify-content: center;
   color: white;
-  background-color: var(--body-color);
   width: 100%;
   min-height:90vh;
 }
@@ -39,6 +45,7 @@ h1{
   overflow: hidden;
   cursor: pointer;
   position: relative;
+  text-align: initial;
 }
 
 .overviewtxt{
@@ -100,4 +107,14 @@ h1{
   border-radius: 40px;
   color: #fff;
   font-size: 1rem;
+}
+
+.loadmore-btn{
+  background-color: var(--movie-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #fff;
+  width: 10%;
+  height: 60px;
 }
