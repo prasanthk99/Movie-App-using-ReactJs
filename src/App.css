@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 :root{
   --body-color:#1F1D36;
@@ -6,7 +7,7 @@
 }
 
 .body{
-  font-family: "Gill Sans", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   margin: 0;
   padding: 0;
 }
