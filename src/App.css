@@ -2,10 +2,13 @@
 :root{
   --body-color:#1F1D36;
   --movie-color:#3F3351;
+  --hover-color:#864879;
 }
 
 .body{
   font-family: "Gill Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -60,7 +63,6 @@ h1{
   bottom: 0;
   transform: translateY(100%);
   transition: 500ms ease-in-out;
-
   overflow: auto;
   height: 90%;
 
@@ -68,7 +70,6 @@ h1{
 
 .Movie:hover .overviewtxt{
   transform: translateY(0%);
-  
 }
 
 .image{
@@ -88,7 +89,6 @@ h1{
 }
 
 .info p{
-  /* background-color: white; */
   margin-left: 10px;
 }
 
@@ -107,6 +107,7 @@ h1{
   border-radius: 40px;
   color: #fff;
   font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .loadmore-btn{
@@ -117,4 +118,9 @@ h1{
   color: #fff;
   width: 10%;
   height: 60px;
+  font-size: 1.2rem;
+}
+
+.loadmore-btn:hover{
+  color: var(--hover-color);
 }
