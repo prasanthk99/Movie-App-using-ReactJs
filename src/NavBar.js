@@ -13,6 +13,9 @@ const Navbar = ({ setData }) => {
             const data = search + searchterm;
             fetch(data).then((res) => res.json()).then((d) => setData([d.results]));
         }
+        if (!Data) {
+            fetch("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1").then((res) => res.json()).then((d) => setData([d.results]));
+        }
     }
 
     const handlechange = (e) => {
@@ -21,6 +24,9 @@ const Navbar = ({ setData }) => {
             const data = search + searchterm;
             fetch(data).then((res) => res.json()).then((d) => setData([d.results]));
 
+        }
+        if (!Data) {
+            fetch("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1").then((res) => res.json()).then((d) => setData([d.results]));
         }
     }
     return (
