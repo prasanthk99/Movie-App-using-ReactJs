@@ -57,7 +57,7 @@ function Movie() {
                                     else if (vote_avg > 5) {
                                         votecolor = "orange";
                                     }
-                                    else if (vote_avg > 8) {
+                                    else if (vote_avg >= 8) {
                                         votecolor = "green";
                                     }
 
