@@ -42,23 +42,25 @@ function Movie() {
                                 {(loading) ? <h1>Loading</h1> : data.map((da) => {
                                     const { id, title, poster_path, vote_average, overview, release_date } = da;
                                     let year;
+                                    let vote = vote_average.toFixed(1);
+                                    let vote_avg = Math.trunc(vote_average)
+  
                                     if (release_date) {
                                         year = release_date.substr(0, 4);
                                     } else {
                                         year = "";
                                     }
                                     let votecolor = "";
-                                    if (vote_average <= 5) {
+                                    if (vote_avg <= 5) {
                                         votecolor = "red";
                                     }
-                                    else if (vote_average > 5) {
+                                    else if (vote_avg > 5) {
                                         votecolor = "orange";
                                     }
-                                    else if (vote_average > 8) {
+                                    else if (vote_avg > 8) {
                                         votecolor = "green";
                                     }
 
-                                    let vote = vote_average;
                                     return (
                                         <div className="Movie" key={id}>
                                             <div className="img-div">
